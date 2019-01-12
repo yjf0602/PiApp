@@ -9,6 +9,8 @@ extern "C"
 #include "../lcd_1in3/GUI_BMP.h"
 }
 
+#include "../utils/utils.h"
+
 #include "app_camera/app_camera.h"
 
 using namespace std;
@@ -51,7 +53,8 @@ static void app_regist(void)
 
 static void app_update_icons(void)
 {
-    
+    cv::Mat m = app_list.at(0)->icon_n;
+    DrawMatOnLCD(m, cv::Point(40,40));
 }
 
 void app_set_tools_bar_message(std::string message)

@@ -2,8 +2,10 @@
 
 App_Camera::App_Camera()
 {
-    icon = cv::imread(APP_CAMERA_ICON);
-    icon_select = cv::imread(APP_CAMERA_ICON_S);
+    icon_n = cv::imread(APP_CAMERA_ICON_N);
+    icon_p = cv::imread(APP_CAMERA_ICON_P);
+    app_name = "Camera";
+    printf("camera icon: %d*%d\r\n", icon_n.cols, icon_n.rows);
 }
 
 App_Camera::~App_Camera()

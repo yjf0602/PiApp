@@ -3,8 +3,8 @@
 
 #include "../app.h"
 
-#define APP_CAMERA_ICON     "res/app_camera/camera_icon.jpg"
-#define APP_CAMERA_ICON_S   "res/app_camera/camera_icon_s.jpg"
+#define APP_CAMERA_ICON_N     "res/app_camera/camera_n.jpg"
+#define APP_CAMERA_ICON_P     "res/app_camera/camera_n.jpg"
 
 class App_Camera : public App
 {
